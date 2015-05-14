@@ -1,7 +1,33 @@
-.row .container-fluid .container {
-    margin: 0;
-    padding: 0;
+
+#tagline {
+/*    Dont care other elements  */
+    position: absolute;
+/*    width: 100vw same */
+    width: 100%; 
+    padding: 5em;
+    z-index: 100;
+/*    float: clear;*/
 }
+
+#bg-image {
+/*    Because container has 15px of left, right margin. I will add 15px on the top and bottom */
+    margin: 15px 0;
+/*    load img first    */
+    background-image: url(img/thinker.jpg);
+    background-size: cover;
+    z-index: 10000;
+/*    One more things? */
+/*    background-image: linear-gradient(90deg, transparent 10%, white) */
+    height: 100vh;
+    
+}
+
+
+.orange {
+    color: #F42300;
+}
+
+
 
 .navbar {
     position: absolute;
@@ -18,7 +44,7 @@
 
 /* Navigating code : Navigate the specific elements */ 
 /* Name : We are changeing defulated class so we need to use the name maintain the basic characteristic*/ 
-/* It all start from navbar-defaule */ 
+/* It all start from navbar-defaule */
 
 .navbar-default {
     background-color: transparent;
@@ -31,8 +57,8 @@
     border-bottom-style: solid; 
     border-color: #F42300;
 /*    distant, design the position   */
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px; 
     margin-top: 5px;
 /*    one more things?  */
 /*  border-width : thinkness of the border  */
@@ -59,6 +85,7 @@
 
 /* let's change border-color and backgroudn-color */
 /* */
+
 .navbar-default .navbar-toggle {
     border-color: #F42300;
     background-color: transparent;
@@ -107,33 +134,9 @@
 /*/////// Background image ///////*/
 /* This is also layers */
 
-#bg-image {
-/*    Because container has 15px of left, right margin. I will add 15px on the top and bottom */
-    margin: 15px 0;
-/*    load img first    */
-    background-image: url(img/thinker.jpg);
-    background-size: cover;
-    z-index: 10000;
-/*    One more things? */
-/*    background-image: linear-gradient(90deg, transparent 10%, white) */
-    height: 100vh;
-/*    height: 100vh;*/
-    
-}
 
-#tagline {
-/*    Dont care other elements  */
-    position: absolute;
-/*    width: 100vw same */
-    width: 100%; 
-    padding: 5em;
-    z-index: 100;
-    float: clear;
-}
 
-.orange {
-    color: #F42300;
-}
+
 
 /*
 
@@ -165,7 +168,6 @@
     float: center;
     display: block;
 }
-
 
 .circle {
     background-position: center;
