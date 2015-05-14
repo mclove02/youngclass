@@ -1,0 +1,185 @@
+.row .container-fluid .container {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: absolute;
+/*    z-index: 1000;*/
+/*    your choice   */
+/*    background-color: transparent;*/
+    border: none;
+/*   Push to right  */
+    right: 20px;
+    top: 20px;
+    padding: 1em;
+}
+
+
+/* Navigating code : Navigate the specific elements */ 
+/* Name : We are changeing defulated class so we need to use the name maintain the basic characteristic*/ 
+/* It all start from navbar-defaule */ 
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 1000000;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    border-bottom-style: solid; 
+    border-color: #F42300;
+/*    distant, design the position   */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+/*    one more things?  */
+/*  border-width : thinkness of the border  */
+/*  Done? Try to put the border to the "left" and make it "thin"
+    "double" 
+    border-left-width, border-left-wtyle, border-bottom-style */
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #F42300;
+}
+
+/*
+
+ W H A T ? 
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+*/
+
+
+/*///////toggle design ///////*/
+
+
+/* let's change border-color and backgroudn-color */
+/* */
+.navbar-default .navbar-toggle {
+    border-color: #F42300;
+    background-color: transparent;
+    transition-duration: 0.8s;
+}
+
+/* Bar design */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #F42300;
+}
+
+.navbar-default .navbar-toggle:hover {
+    border-color: #F23400;
+    background-color: #F42300;
+/*     one more thing?    */
+    transition-duration: 0.3s;
+    
+/* when you hover, make it rotate 15deg for 0.5s slow */
+/*    transform: rotate(0% 50%);*/
+/*    transition-duration: 0.5s;*/
+}
+
+/* The :focus pseudo class in CSS is used for styling an element that is currently targeted by the keyboard, or activated by the mouse. Here is an example */
+
+/*
+
+ Not nessecery? 
+
+.navbar-default .navbar-toggle:focus{
+    border-color: #F42300;
+    background-color: #F42300;
+}
+
+.navbar-default .navbar-toggle:active{
+    border-color: #F42300;
+    background-color: transparent;
+}
+
+*/
+
+/* Try to make Navigation color differently. 
+    Avoid to choose Red! */
+
+
+
+/*/////// Background image ///////*/
+/* This is also layers */
+
+#bg-image {
+/*    Because container has 15px of left, right margin. I will add 15px on the top and bottom */
+    margin: 15px 0;
+/*    load img first    */
+    background-image: url(img/thinker.jpg);
+    background-size: cover;
+    z-index: 10000;
+/*    One more things? */
+/*    background-image: linear-gradient(90deg, transparent 10%, white) */
+    height: 100vh;
+/*    height: 100vh;*/
+    
+}
+
+#tagline {
+/*    Dont care other elements  */
+    position: absolute;
+/*    width: 100vw same */
+    width: 100%; 
+    padding: 5em;
+    z-index: 100;
+    float: clear;
+}
+
+.orange {
+    color: #F42300;
+}
+
+/*
+
+#work #carousel-example-generic {
+    margin: 0 0 5em 0;
+}
+
+#work #carouselcontainer {
+    padding: 0;
+    margin-top: 5px;
+    width: 100%;
+    background-image: cover;
+}
+*/
+
+
+#pad {
+    margin: 30px 0 30px 0;
+    display: inline;
+}
+
+.img-responsive {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 200px;
+    opacity: .7;
+    transition-delay: 0.2s;
+    float: center;
+    display: block;
+}
+
+
+.circle {
+    background-position: center;
+    border-radius: 150px;
+    margin-left: 15vw;
+}
+
+img:hover {
+    transition-delay: 0.2s;
+    opacity: 1;
+}
+
+H2 {
+    font-weight: bolder;
+    color: brown;
+    
+}
